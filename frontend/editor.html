@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NeuroFlow — Video Editor</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <span class="logo-dot"></span>
+          <span class="brand-name">NeuroFlow</span>
+        </div>
+        <nav class="nav">
+          <a href="index.html" class="nav-link">Home</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container">
+        <div class="card" style="max-width: 860px; margin: 0 auto;">
+          <h1 class="card-title">Video Editor</h1>
+          <p class="hint">Preview your session recording. You can discard and re‑record if needed.</p>
+          <div class="video-wrap" style="margin-top: 10px;">
+            <video id="recording" controls playsinline style="background:#000; width:100%; max-height:60vh;"></video>
+          </div>
+          <div class="actions" style="display:flex; gap:10px; justify-content:center; margin-top: 12px;">
+            <button id="discardBtn" class="btn btn-ghost">Discard</button>
+            <button id="rerecordBtn" class="btn btn-ghost">Re-record</button>
+            <button id="analyzeBtn" class="btn btn-primary">Analyze</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/editor.js"></script>
+  </body>
+  </html>

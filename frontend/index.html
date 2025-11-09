@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NeuroFlow — About</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <span class="logo-dot"></span>
+          <span class="brand-name">NeuroFlow</span>
+        </div>
+        <nav class="nav">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#contact" class="nav-link">Contact</a>
+          <span id="connStatus" class="conn-pill" title="Backend connection">Offline</span>
+          <button id="openSettings" class="icon-btn" aria-label="Open settings" title="Settings">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9c0 .65.39 1.24 1 1.51.3.14.64.21.98.21H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z"/></svg>
+          </button>
+          <a href="auth.html" class="btn btn-primary">Sign in</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <h1 class="brand-glow">Understand your stress. Sharpen your focus.</h1>
+            <p>
+              Our website helps people and goes above the ordinary by not just
+              being a normal app to note down your stress. It uses your face in
+              a live webcam recording to analyze your stress level, explain your
+              focus level, and suggest a course of action based on your stats.
+            </p>
+            <p>
+              NeuroFlow blends an intuitive study workflow with computer vision
+              analysis to give you simple, actionable guidance you can use in
+              the moment. Start a session, stay present, and let the app handle
+              the insights.
+            </p>
+            <div class="hero-ctas">
+              <a href="auth.html" class="btn btn-primary">Get started</a>
+              <a href="#about" class="btn btn-ghost">Learn more</a>
+            </div>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <div class="blob"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <h2>About Us</h2>
+          <div class="about-grid">
+            <img src="https://via.placeholder.com/360x220" alt="Team photo placeholder" class="about-img" />
+          </div>
+          <div class="card">
+            <p>
+              We’re <strong>Vidhyuth K</strong>, <strong>Pradyun J</strong>, and
+              <strong>Aarav M</strong>. NeuroFlow started as a simple idea: if stress
+              and focus are a daily part of school life, why not build a tool that
+              makes them easier to understand and manage?
+            </p>
+            <p>
+              As high school students, we juggle classes, clubs, projects, and
+              exams. We know the feeling of staring at a screen, trying to focus,
+              and not knowing what’s holding us back. That’s why NeuroFlow is
+              designed to be relatable and practical—no complicated dashboards,
+              just a clean experience that helps you stay in the zone and shows
+              you what to try next.
+            </p>
+            <p>
+              For others—students, self‑learners, or professionals—the same
+              principles apply. Short, consistent feedback loops lead to better
+              habits. Our approach focuses on privacy‑friendly, on‑device capture
+              during your study session, then gives straightforward guidance you
+              can act on immediately.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section section-alt">
+        <div class="container">
+          <h2>Contact Us</h2>
+          <div class="card">
+            <p>
+              To ocntact us for bugs in the siite and potential additional
+              features for the site send an email to the adress:
+              <a href="mailto:pradyun.jupalli@gmail.com">pradyun.jupalli@gmail.com</a>.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>© <span id="year"></span> NeuroFlow</span>
+        <a href="#top" class="nav-link">Back to top</a>
+      </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      const base = NF.loadApiBase();
+      if (base) {
+        fetch(base + "/")
+          .then(function (r) {
+            NF.setConnStatus(r.ok ? "Online" : "Warn", r.ok ? "ok" : "warn");
+          })
+          .catch(function () {
+            NF.setConnStatus("Offline", "err");
+          });
+      } else {
+        NF.setConnStatus("Not set", "warn");
+      }
+    </script>
+  </body>
+  </html>
+

@@ -1,0 +1,25 @@
+# NeuroFlow ML Requirements
+
+# Core ML Frameworks
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Computer Vision
+opencv-python>=4.8.0
+Pillow>=10.0.0
+
+# NLP & Embeddings
+sentence-transformers>=2.2.2
+transformers>=4.30.0
+
+# Vector Search
+faiss-cpu>=1.7.4
+
+# Utilities
+numpy>=1.24.0
+scipy>=1.11.0
+
+# Optional: GPU Acceleration (uncomment if you have CUDA)
+# torch>=2.0.0+cu118
+# torchvision>=0.15.0+cu118
+# faiss-gpu>=1.7.4

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NeuroFlow — Results & Analysis</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <span class="logo-dot"></span>
+          <span class="brand-name">NeuroFlow</span>
+        </div>
+        <nav class="nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="study.html" class="btn btn-primary">New session</a>
+          <span id="connStatus" class="conn-pill" title="Backend connection">Offline</span>
+          <button id="openSettings" class="icon-btn" aria-label="Open settings" title="Settings">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9c0 .65.39 1.24 1 1.51.3.14.64.21.98.21H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z"/></svg>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container results-container">
+        <h1>Results & Analysis</h1>
+        <div class="results-grid">
+          <div class="card">
+            <h3>Session Summary</h3>
+            <p id="summary">Loading session details…</p>
+          </div>
+          <div class="card">
+            <h3>Focus</h3>
+            <div class="meter"><span id="focusMeter" style="width: 0%"></span></div>
+            <p id="focusText"></p>
+          </div>
+          <div class="card">
+            <h3>Stress</h3>
+            <div class="meter meter-warn"><span id="stressMeter" style="width: 0%"></span></div>
+            <p id="stressText"></p>
+          </div>
+          <div class="card">
+            <h3>Based on the results, we recommend</h3>
+            <div id="aiRecommendations" class="ai-reco-placeholder"></div>
+          </div>
+          <div class="card">
+            <h3>Ask the Coach</h3>
+            <div id="chatMessages" class="chat-messages" style="max-height:220px; overflow:auto; margin-bottom:8px;"></div>
+            <div class="chat-input" style="display:flex; gap:8px;">
+              <input id="chatQuestion" type="text" placeholder="Ask a question about your focus or stress..." style="flex:1; padding:8px;" />
+              <button id="chatSend" class="btn btn-primary">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>These results are illustrative UI placeholders.</span>
+      </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/results.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NeuroFlow — Study Session</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <span class="logo-dot"></span>
+          <span class="brand-name">NeuroFlow</span>
+        </div>
+        <nav class="nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <span id="connStatus" class="conn-pill" title="Backend connection">Offline</span>
+          <button id="openSettings" class="icon-btn" aria-label="Open settings" title="Settings">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9c0 .65.39 1.24 1 1.51.3.14.64.21.98.21H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z"/></svg>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container">
+        <div class="card study-card">
+          <h1 class="card-title">Study Session</h1>
+          <div class="video-wrap">
+            <video id="preview" playsinline autoplay muted></video>
+          </div>
+          <div style="margin-top:8px; display:flex; justify-content:center;">
+            <span id="connStatusLocal" class="conn-pill" title="Backend connection">Offline</span>
+          </div>
+          <div class="actions" style="display:flex; gap:10px; justify-content:center;">
+            <button id="recordBtn" class="btn btn-primary btn-lg">Start Recording</button>
+            <button id="nextBtn" class="btn btn-ghost btn-lg" disabled>Next</button>
+          </div>
+          <p class="hint">Keep this tab open for the duration of your session.</p>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/app.js"></script>
+    <script src="js/study.js"></script>
+  </body>
+  </html>

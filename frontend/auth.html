@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NeuroFlow — Sign In</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <span class="logo-dot"></span>
+          <span class="brand-name">NeuroFlow</span>
+        </div>
+        <nav class="nav">
+          <a href="index.html" class="nav-link">Home</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container auth-container">
+        <div class="card auth-card">
+          <div class="tabbar">
+            <button class="tab active" data-tab="signin">Sign In</button>
+            <button class="tab" data-tab="signup">Sign Up</button>
+          </div>
+
+          <form id="signin" class="auth-form active" autocomplete="on">
+            <label>Email
+              <input type="email" id="signin-email" required placeholder="you@example.com" />
+            </label>
+            <label>Password
+              <input type="password" id="signin-password" required placeholder="••••••••" />
+            </label>
+            <button type="submit" class="btn btn-primary btn-block">Continue</button>
+          </form>
+
+          <form id="signup" class="auth-form" autocomplete="on">
+            <label>Name
+              <input type="text" id="signup-name" required placeholder="Your name" />
+            </label>
+            <label>Email
+              <input type="email" id="signup-email" required placeholder="you@example.com" />
+            </label>
+            <label>Password
+              <input type="password" id="signup-password" required placeholder="Create a password" />
+            </label>
+            <button type="submit" class="btn btn-primary btn-block">Create account</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/auth.js"></script>
+  </body>
+  </html>

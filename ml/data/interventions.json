@@ -1,0 +1,112 @@
+[
+  {
+    "id": "breathing_box",
+    "name": "Box Breathing",
+    "description": "4-4-4-4 breathing pattern to reduce stress",
+    "duration_seconds": 60,
+    "effectiveness_stress": 0.9,
+    "effectiveness_focus": 0.6,
+    "category": "breathing",
+    "instructions": "Inhale for 4 seconds, hold for 4, exhale for 4, hold for 4. Repeat 4 times.",
+    "triggers": ["high_stress", "anxiety", "overwhelm"]
+  },
+  {
+    "id": "visual_reset",
+    "name": "20-20-20 Rule",
+    "description": "Look at something 20 feet away for 20 seconds every 20 minutes",
+    "duration_seconds": 20,
+    "effectiveness_stress": 0.4,
+    "effectiveness_focus": 0.8,
+    "category": "eye_rest",
+    "instructions": "Look away from your screen at something 20 feet (6 meters) away for 20 seconds.",
+    "triggers": ["eye_strain", "declining_focus", "long_session"]
+  },
+  {
+    "id": "micro_stretch",
+    "name": "Desk Micro-Stretch",
+    "description": "Quick 30-second stretches for desk workers",
+    "duration_seconds": 30,
+    "effectiveness_stress": 0.6,
+    "effectiveness_focus": 0.5,
+    "category": "physical",
+    "instructions": "Neck rolls (10s), shoulder shrugs (10s), wrist rotations (10s).",
+    "triggers": ["poor_posture", "physical_tension", "fatigue"]
+  },
+  {
+    "id": "mindful_pause",
+    "name": "Mindful Pause",
+    "description": "Brief mindfulness check-in",
+    "duration_seconds": 45,
+    "effectiveness_stress": 0.7,
+    "effectiveness_focus": 0.7,
+    "category": "mindfulness",
+    "instructions": "Close eyes. Notice 3 sounds, 3 sensations, 3 breaths. Open eyes.",
+    "triggers": ["mental_fog", "scattered_attention", "emotional_overwhelm"]
+  },
+  {
+    "id": "power_posture",
+    "name": "Power Posture Reset",
+    "description": "Adjust posture for confidence and alertness",
+    "duration_seconds": 15,
+    "effectiveness_stress": 0.5,
+    "effectiveness_focus": 0.6,
+    "category": "posture",
+    "instructions": "Sit tall, shoulders back, feet flat. Take 3 deep breaths.",
+    "triggers": ["slouching", "low_energy", "confidence_drop"]
+  },
+  {
+    "id": "gratitude_moment",
+    "name": "Quick Gratitude",
+    "description": "Think of one thing you're grateful for",
+    "duration_seconds": 20,
+    "effectiveness_stress": 0.6,
+    "effectiveness_focus": 0.4,
+    "category": "emotional",
+    "instructions": "Think of one specific thing you're grateful for right now. Smile.",
+    "triggers": ["negativity", "stress", "frustration"]
+  },
+  {
+    "id": "cold_water",
+    "name": "Cold Water Refresh",
+    "description": "Drink cold water to boost alertness",
+    "duration_seconds": 10,
+    "effectiveness_stress": 0.3,
+    "effectiveness_focus": 0.7,
+    "category": "hydration",
+    "instructions": "Drink a glass of cold water slowly. Feel the temperature.",
+    "triggers": ["drowsiness", "mental_fog", "low_focus"]
+  },
+  {
+    "id": "desk_yoga",
+    "name": "Seated Spinal Twist",
+    "description": "Gentle twist to release tension",
+    "duration_seconds": 40,
+    "effectiveness_stress": 0.7,
+    "effectiveness_focus": 0.5,
+    "category": "physical",
+    "instructions": "Sit tall, place right hand on left knee, twist left. Hold 20s. Repeat other side.",
+    "triggers": ["back_tension", "stiffness", "stress"]
+  },
+  {
+    "id": "pomodoro_break",
+    "name": "Pomodoro Micro-Break",
+    "description": "Classic 5-minute break after focused work",
+    "duration_seconds": 300,
+    "effectiveness_stress": 0.6,
+    "effectiveness_focus": 0.8,
+    "category": "break",
+    "instructions": "Step away from screen. Walk, stretch, or look outside. No screens.",
+    "triggers": ["long_focus_session", "mental_fatigue", "25min_timer"]
+  },
+  {
+    "id": "progressive_relaxation",
+    "name": "Quick Progressive Relaxation",
+    "description": "Tense and release muscle groups",
+    "duration_seconds": 90,
+    "effectiveness_stress": 0.85,
+    "effectiveness_focus": 0.5,
+    "category": "relaxation",
+    "instructions": "Tense face (5s), release. Tense shoulders (5s), release. Tense hands (5s), release. Repeat.",
+    "triggers": ["high_stress", "physical_tension", "anxiety"]
+  }
+]
